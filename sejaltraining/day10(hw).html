@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sejal katoch</title>
+  <style>
+    body {
+      background-color: lightcyan;
+      margin: 0;
+      padding-top: 70px; 
+      font-family: Arial, sans-serif;
+    }
+    .heading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: darkslategray;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      gap: 15px;
+      font-weight: bold;
+      z-index: 10000;
+      text-shadow: 2px 2px 5px red;
+    }
+    .heading:hover {
+      background-color: aqua;
+      cursor: pointer;
+    }
+    .header:hover {
+      color: yellow;
+      text-shadow: 2px 2px 5px black;
+      cursor: pointer;
+    }
+    .parent {
+      display: flex;
+      justify-content: space-around;
+      align-content: flex-start;
+      width: 100vw;
+      height: 100vh;
+      background-color: lightgray;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+      box-sizing: border-box;
+    }
+    .box {
+      font-size: large;
+      text-align: center;
+      padding: 20px;
+      width: 15vw;
+      height: 27vh;
+      background-color: white;
+      border: 4px double grey;
+      box-shadow: 2px 2px 5px darkgrey;
+
+      background-position: center;
+      background-size: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 10px pink;
+      cursor: pointer;
+    }
+    .btn{ 
+        padding: 10px 15px;
+        font-size: 14px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    
+        background: linear-gradient(to right,pink, grey);
+
+         border: linear-gradient(to right, yellow, grey) ;
+
+    }
+    .btn:hover{
+        background-color: lightblue;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background: linear-gradient(to right,red, grey);
+
+    }
+    .im:hover {
+      transform: scale(1.1);
+      box-shadow: 4px 4px 10px pink;
+      cursor: pointer;
+      height: 70vh;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="heading">
+      <div class="header">Amazon mini tv</div>
+      <div class="header">Sells</div>
+      <div class="header">Best sellers</div>
+      <div class="header">Mobiles</div>
+      <div class="header">Today's Deal</div>
+      <div class="header">Customer Service</div>
+      <div class="header">Electronics</div>
+      <div class="header">Fashion</div>
+      <div class="header">Home & Kitchen</div>
+    </nav>
+  </header>
+    <div class="parent">
+    <div class="box"> <img class="im" src="https://th.bing.com/th/id/OIP.YOH0tbUKyYHBZyzpULO_mwHaHa?w=192&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 1" style="width:100%; height:60%; object-fit:fill;"> <p> Ice-cream (strawberry)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"> <img class="im" src="https://th.bing.com/th/id/OIP.bMccXzDfulPxYCpOWeM0fQHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"  alt="Prodct2" style="width:100%; height:60%; object-fit:fill;""> <p>Ice-cream(Vanilla)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im"src="https://th.bing.com/th/id/OIP.3Uoroez-JGH1L0Wb6NN2owHaHa?w=199&h=199&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 3" style="width:100%; height:60%; object-fit:fill;"> <p>Ice-cream(Chocolate)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im"src="https://th.bing.com/th/id/OIP.zUyaBwX5FJ0vaeJPysO-5gHaFj?w=208&h=156&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 4" style="width:100%; height:60%; object-fit:cover;"> <p>Ice-cream(Mango)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im"src="https://th.bing.com/th/id/OIP.XH_E1jcew5DqBUrnP2L5dwHaHa?w=208&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 5" style="width:100%; height:60%; object-fit:cover;"> <p>Ice-cream(Raspberry)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im"src="data:image/webp;base64,UklGRjQaAABXRUJQVlA4ICgaAAAwmwCdASoCAQIBPp1GnUqlo6mnKPH8ETATiWJtcJxMBdrWwavvWpR/0vO4437kfkn4HzoeEHbHmxdP+bj/qet/+qbw7nM/UDvbm9SY3lMx0Zrfu7iWjay/lA9IZuIY54E658D1uQat6VyizTQ14/1Qlyz5/RYnRUSY9gJ8G4UMmcVZs0cZu/9zdV0yVKEKXhUTkVTUOjJhHHDmIBND94srWQIIsiDkzA6rE1Kv2ax3ItgGCIddRA1PZK9aYH0as66wYE23Ncn8RDjHxh3mkyEK4GBCYFHfPfZ578Bmq3PeCxY79gI/1oQGQNsoN+w27c3Pqc0RoO1WJuhzQmwcjv0HfyOF27agUxufMoZBnedKggqSgP4zGFd/AVwVC8vNDFMMWOijlXyY6CyZPquXezesCVOTjM6XDL3SAOr5PhHtLzHpArXzGsRGfi7VLygg5Dzu/ih7qgg+D2V7Ss1+6fTgWP7yp0EArJPAg5PpUOQJKqlFtauODVL5f/gzq9nzAaL1XcHHmXjgHrLShbhzo9qOHKpbLVQMXOkebXgnfUAU625mQfvFBwiZImFTwTM4TpH/BbVnSysT8jvuhyrm/eGOzAnO7x7jofQc4QcKnLs+JQlR7Kr2+6Y9oiViTeEkqgyBzCWbky3KrRvkgiND5f6BJQuZhulfBSPc9KMWo+ffJmYC4l5bUPrWUChsREWnP0tpUfBoNeDFXQKxb3dxAoX4xAICORbdxyArD273PIVZMbggR5w2k8dREthfhjy5wT/2LEIhzpzySJTlD2Mtz6/m6dKQwACNK849Cq3wYNrC6O3vy7OWwODxDbhvndaZPsFtJNx/YainsUrVC/pXu3I3/O+J7L7Vh3p5BuTBpcXHRfYwVrbRH2F64KitWZs31w/uihpJiZIc4rzPPjElUkxL5r9I0ku+WvsdVMdMvQDvq6qALL03dUSHk/+Hvxf2P8LyOPKzI+XpyY+kAy8pTfbiMN2GFNn3KsS8bZj0sPDv+CspJuBIoQ/whSogcoqBfKOqVb86Csb2PlzApCXbuaSxYrX6H8sb2e/pdqoxU+luz+ZZYKP3NDONx9FThplo1ul8QM/k1palZMlCyCXCWVLcNKNrRhkyVuOE/Miyll1WOUZw/P9KspJjtvkDzUv6VpgjMEjSQdapZsrp7d2/V91qa8GboIfjuFUOrqSoEULNhQr/Z/SAUoPtYTpnYSr/aRzWqYYOjrDKgv36A77ikN4WK5BCkC8DR1jN7SicZSjyMZBHgP20wJYMDxpDP61aoHezYIeec5mwjYaOgA/Kw3wq16u4/5sL4rKBYSkTq8bVhO/nZCjivd0XiyFmt8q/Xffxgjsg/v24A73rX5cJrjS44AhkoCwp1l/3Ia4k5dvf+klyF2h4y+S0OT76yBKLruchPLJLXqV3yS0mH59PjDYw3DnrK7qOAxs3ltJwLlT4gguaWAjhsMtJlslJxLC2gtnC0n5DQM4iv8TEWJf93W+ANhFNkmG8khds8fT+5+DyJeoyOjSvpFnBaGQpP0LuRaZGM83C40vghmVTSEdye0l1KChujvOM1hBwZpcXfCnYYGP/tpPs7iBAUBI9P0NtH4idTpz6F+2WNZsYJqYIpNGsDKyJeoXtS/JmivyNIScGds3NCd439OCObpme1ShccdmrBAD+8LUzaB8uEcf/FOR+xnUn/8j39CvtCooOZ22OAlKFhPN4Yyzz1LMbqAOHny+di6DVG+Xu1xhdBH0S4Hle6dZkjiZn82OZo+idGQN4q4CIlPWa1ZM/RMMAcLnY8c1HfEETjWAS/Mw65uE/g0JM5OuNo3hh04Z5psZhKygJ27vSDDnnMJuKAhvBYkNDcsMqz3/BCWJHx5IdzNcxLwrPQ4cqElk5S5NQa29T+60XC6/yZnVKH9kOf1M3d8mlFpbjNOgQ1UMj+045hXutnBJ3i124oknrvvDnEE8DvXabD45G70M0ZUAdrdfFnnBa/xpzvjp2OcavA4SK8xKKC9J/+wtCCCTn1ChVju+gDfFBEzVC97XiHD6IkdjdTEHRDqF/O4bC7RNnrQgIqDFhTs5D1nf6rXLJ+0ak8lGLKXHxNP7gi2XTxWhXJdz1nP+DIvc5DfcYT4dqxCG8DlswqxBTUBHXD1RSFDKXJwgV5FV5LUWmB045fzDrRmSnirg7FSnvsPyr64tJ6ujgpzZo6wbfNS9tuqJD74wCCwCc7sTZFkB0/2PYgapkUiS0xQO19GVwZS/l2TGALhOz/bAf8jm2scEyp+LZybKY8FSB6h96hy/KbD4mXRDByClVGM79DRLq8xBjxTgrl/FAWHIDU3h8cIWWGCRNXrFJmdZJXyOly93aOo4cjlAF2+zklidlI1GyWvZXuuztfJcHbhNcTtBQdZDj/CJYJxSKCtorlK/yvUkwxmbx0ZSnire9RxPo7DUS7MbEpJPPstyfqcDwphq1teFQz27/36G3HxUiFJs2QJlgxmSrQCMzEKcGcnc8QP/EGxYvy8CcU9tG5CfI6Kexr9AqPk/7jloDP4tr8LF9b+yhqNt1DfzSNqCclMvARbwyKe305d0tpiqHoNUZ+0n3YIvPbAYWkMI3UJytT7GQB9OSVfWamyrbkO9puAZMUV1Y8fEoVUFFvaSryW+bRBccjazp6NzHAZ6qQvds99PB+6ix8vuqXFGFDXkpFrIm6HPn4UZBNTvpTwcVFaWq9tYGAfm48UGCv2AyZFppB71FJjVA2UKOoa1bIASyiyy8cwYS3hCqySVRD4jzOo5iJQHxTwFkXC0g0O9h0+TIQgDgzE86JY9ItjB6MECbO9/Wa/c0A4gGiIK46ImXbeDGAWC0MRCbRJVwpc61fwz9inLwoVMmGDI80We9nBy2WoHXCzRsUiL/+wYbjM4On4M6pWT26dtJh02HASEcU3kYO/DUP1P1YLO2y6UG2sZcUJ9M1L7BwdZqpSoIslK/rdMz+LY4h4VxSJrVcXzYrMyoe4wbow2g7+2xqCD3v3FS0IrVo+s20qWxY+Tf+A00UI6vS7sfbPIAxSgKEJheiNpe7C2vWOY4BdAiJZTEKRXtQoi79YQt5GtFH5OVEn9/Tx1gPlzYgNbH0Rlj7hVr+clvVF1F3HaAIQ9rZS1vqo4tRKEUWd+OQalOTxklS0BLP9aDL1hZJiJ118Scoiev2aeCUdIoVHLaMqfTGVLUrnmrHKh+37bRpdEwbjsuUVfmSIgLpVIYi0QeMJzGo83k62BIJvSUeyH5AeJbrTKzxnVG2hGkfgSPvtAa10pzSNRxXOh3KmeFUA8/YmKTVoVW1Q/T6fvuQpHG5l3+sc8pKH2UiHfZcTKrBZpQMXWgP/u1T8tdRoql3XEsGWWgvDPVvtZntUVVrrPPX+uAIAs8bw7kt6J5fpgX1tdPnFb51dZ8GLqOZ+forJ3Q+fetZAggfdeIUuBvDWny+GxLc9SVkxvbsTUeRElM6zOiW3d/avMt1/jn7iDFYq3HeQIdYIXR8+a6sMaRKShHMpkwtffSiGMjtDdj1aUokjSE1yiF7mmANlnilRb+dzImlPwiqJUfEut6ue6Kb8HD0szZIkFU/1a7pjIRT8WRT5hcYYXk+SUpBpV0+LSjD/AraU/rYzsCngbF1gXgRuTG4EoZyApj3brUaV5opIOmk+FM8zlO7LxHuQYcYXUaIadKBpPo4a1hnj+1JHnXAvE8aK7kSJ6CopcrpgQmgjHPjN04NKqDAoks9M+3U7fzfdn9U8nPI27O5PjeF250PHni30bAWzRzj+UWVDiXHAX/s/jRCdjGTg3FTcT/+qu2MTia+4chR/AnzKB+t87V/qOP8lpKbrxY41HtmlbheVwqz4rBJyRcr3qGwHYJdP6H9Bu6nXk+bSmo7Zr9qnFvgmMngKOh8oJ4AasGxNzmz7ubzVZFTYD7CxIuk7LioF4wyDQux6wlsSEBItdFoEJ3OuKHj/jlFzzWD+buf6OOtJIrFcfPqOqOgVzi7J1ex7DByivWn9JXB+VCjNSBhIHuPXKkip4M1Lre3lPJG2tdsV3RWWDP6iAZxfZTzCqaylP1xgaPeUX725/sSaiz1Onq0pRCteE/PbLCu1WykAWzg4KTXtAF7kMS6U1jrX3yqqUG7zb21Pg9Q9h5v2RbPgfvVlezJkLt9BQNVsX0e3T2I28c9oP5i02EU8Nf2w5A0hsjTaub7EReRf/ibfWNIism3hAUAGaNpAD68lG59HqkncYGsiMpcx3+P4+QShpfQHzSPTSOnmiVedB+etkVI7XzGoczDIX36LSHV6Ml95p5sXfH3jkSr7HjRt/6IYTfrV3FUYqwfk//4kQ9AG1AO2dHauujmdLQIe2rRQshQPtZgW6aTxZjyfAxsL5je0wY+pVWWMDsjyc2wFHX9Afbnsr8C6vaMEk1HYkX096xjESdbE+BWMidfso4IB2ZS9ke8AHWGWV/ewlnhrIJ8XzEjonAnuI8B25fWKGRcdPVt9Bmnw/Iw/64wp9jyW/3Q1qrkskmuK5OQSNxsfz6IaXOGJlEI1iOr8BZ3XoT+fzNMqB+MTf4fQR1XYmOuiA59dTmWEDR/p9XgiFhpd7SMBLKmcR90sKpWa64ftkWrGQmNJkjailvkqiFbYyhl5DFHoF2oymnApSbJk547vt5HCrUq0p9P/I/auM4rYHFYMnvY9fDymGxRw27YmNJseDfdZY66ulFmiEdRpU5eHwIkxV0nJvQ7aB/XX2EXhz7QhDvWFDPgHmFd8U8KUPnppHcfOFikDUxOowugmz+aUfQpTtL7VVarq4Fmu4Y+WP396PMUELr5+rX3y7F7oLWpU11DUkB7rTxeLOPEvP50R+jMNEpzmEiVe8AmQdqDPfzxucN+IY+Qh7Y3fFsjhxxuOjYN+jhPl61Eyb1146ZrgdjDeKO/cAFoTGO/Meq12ykKKDGoJC9a+TJcvShw9H1Q03XADoreku122OiOOMOEaMc2NJeFNbwTd+Zp4SrIRnA+r6Ff+3bGEhK2T0xIOWjUG21zvowTn6uHKi7ruFHGD7S+O9bNjjx0jSIfjBXvj5wiSIWQvztjL2pI2AiXxPF09RkEcHlkqAWhbJXg0Iq4L0RVUfcqfAh95lyAleEoZjFOE6GH1V6nyfrSGtr4qPbL7ffjLHhR/iMTcZj6v8og1e31hg0kSQMqZsiXQ1oy0uh2iiQWW7bU56SjBW13V7+pHkRvLqB1CuGuAik9DRZeWyZ5zpX2aczISCOGvLC8KpiUkIFjLLOSpOE1UMHmmNPanI1pnC3H01NmqP4RmB5JyTp5Na/YYGYD/y8hX4sbZNjup0AdX+2Ax8KkTuOEjLDmZXVwiB+HuSrNgZBY0PRoptLI+iB+Cv6qkpH98ZS4faAfsiT9g4BSzkrcknmMenCixi5MCg0NBHTQu1jCEr4wlm+ZXRRddHPm6cgzx+rVOO3dNTPGWQEpAWnjQX8vJJ7XAjMEp3ZqrT64i2uUvM2xuV2IDi/SXBrWafFFpyJjs8s4XAVzxrKsG7W/u8IDRp34qlm9317GK6ywlY9jtCDVlVVlM5CEjSa5/IL6lSaHA3Otvl8AHZ8njcaEK27HuXObZczTtCzKjCgY0/PkNk/Bkff/VZxaqTG7FISwrXwqyz+KGdnoplg6Zu8O+MDbFuJj29BAq3To4k8/Tkx1WDtuj6SUku3HAhpT4ixR4ZFAo7QrjUMx57fzsdJH/jSpZGaIzGGiQhQy9AJoZFFTN0hLFwh2kVPTmxuNTaHWGcFoZABqo88GfRhU1s+GWClCVFW9TuYYyQAzTRThlJ86hwV9haFezFdjZaII1jMslI4TfBLN3i1j1rO2XcMRxKfRGlWfV42psI0zChITj4YRGzVUFBNTT6f6b7PTsOkAPC42zE/OpRqJSWUPLOEIJsIijfVdmeNZWMIm2xznJsQgEWqr9O5oOCBwBY30LFFGJdbnsn7VLYepVDTJ7wW0zssEzK+m1TmksuSdxT1j2PdssZjRKj3V2rwxcsRihRqjENu1DpCom8EfjwGoflIet5t1LPKbXHEIhBVVIb1eJcGxkNSAtA30BdWT5MwlW/mjFC2NIIZrlU9bHADuNO07+g7V9iemHhSaGx6mFQ+3veu7LUUi3vRNZUI2h7YCFhL4aa82r5cK1DuuGDuCFQM1gUvLoF4VjVF7W2Vo5MqcC2Zw4umvPAA30SZWFju8TcMc93ostIM9sHV+IHVMJRV68l39TTP0DP7ocB5vLIjRNmx+L/LItFqfrOHRzmzr7J/8tavkLDei/wMMSWMkJYPTkLSk8DD/1uh0NWjaDcBU1MttxqJ6frVC7q3j7Q/9OJUTSpWiabDcKvCMTBWc2pFCZ8c3O79CFJjNmBGVi8+mabyYHn/9r5hGTEpWDEnXd/ZGe8W1yC7ssHRk8zn1yUSQhTusCohOfCJXn8J45epF+Jt1BiIN5O9FHgDaKCp0WtS3MpGRpV3DBiFtxQf/RjRKclxzfBI+7I8UYwoFKbFYowwwVBy/J7xXknCpH73tj7UQm+m8BWC7VdcAZqWC0BTPDph+nnTK+XquT1MUpmC7sFBVZt0/58h9coD2dJ/V2mVwuHju7CSRSsgxUJq7I2Z4svCp+FBMH6BMRhObA7jZIlbuS5qy01z2GrJSpoVsK6mpdeYu7rxEsH9gf5Fq00UZsdOt8WSH+L1se2oIuzIPZsRSSFfvk0Ph88EksEHuKZZUL8QAP5XUSCr48CF3IuyMSeNiTR0n2Ri5HszbMyDrHKnf4XOJrFSSkbPKqhvE9w12BJFRBrZf7iNyonAiN3qM5aJ8Md0xMNkkntRJxepn1/KqeSX3vzS5JHLl5VdI00W9oGkRC58HGH+Gky30xILYKBT7zfw4tEIRj2/jkRK/kSRCBQTQ/2tHRhPP8Zb7h9+lqxxuLoZkvdzjeiVqB7H8Zgdvp4jq+uX8e8ghkgyNGjivls1Zbh075kFiX71N2cJZcjunxIzJyjOySPrBVlcU71WzZGtOIs19eRabpR0LNzc2gwK/rQ6kpRdFcrSXVQLA7ttmnFLIi9GHUyk0ducRm/8FDBwfoBd0UBG262Kn6NBjrDpCwA9z/h79zMsOJiCw+3q46a6KUQhHcq9t7yrmptT7XEs3NFolwpLCqhdVGbmQDVWhTm7Gm2LcWaPd8NkatrfvkFm9yQi9WMOOzAJv5kcMmhtpzramfTbnDJBQa2vvPTwdP17jHWltJZFeEqAMhqmarfb16YAcG2EHi9PK9Pm8y0JGwjsx2GGG2Tnsr3UqpIeWHocBb0n8K7j+Il5jKccrfx6eCYerwpXb35isjpH/3fSLg6CxA8RiyGp9lmjSTQSWoRFu65D7mxeT31WHn8lADxfbGdVP01yVm9AwqnV3+zdtC4YvrC5CpMN75B2bX+XwVE2yK0/ROjjnYJw2sETaffaJYVr3k8UUvnDdMSCQrcmcsuSZrR6MluaISPb15X55rZHARtY14nX5sSuEWyNorzMIbSi3pEj46Cu3h/RJPLWm99ImrXJVjHdnsrdCtB5d1fy+WoSQy66t+Vg5DZdFLdDSmBhJpC3at/sC3A/nvidyKTIRMCTzrLCQRsNa7bVzyxXFfkRyrHjk4O4mv1DR2H66IsifdAjCNB7BALHUJnuW5vgL1DaisrKZitaJOiXNGLDcfoOkl7tcJpsnWtEhhpqnwujfV++pBSZbCNoYjfkFrcW0V6ZdK2y7qCB9jIsJ7k4JcTPUpAlBS+Yua8oMsNHDaQFr/7EPSVtO0GLW/q7wWKNZFjx3rEJ/qwDPbHEpCZEOU2GQkjyfmc5DzGwHyuyL8BPPw+yccau8VNMQxSxh8maT3halfn3VQRaTrHDSbaCzBHygnbnBtvL1azq1DXgz5aT4v//+9EMiLqaHcqhydViuNGWXBPWW/1xZOWCt6bSWpSxkUk2/gJ8tu06SuxxuOH+/oHVagOCakhwpHI1SRtzJQS3rCr8CH+13shGgkZD3epIhNIhREMTBVs2iONzthfQQAfL/ij2s1fU5CCg9sqb2QQKG4c0zMNrG5TOjjBxVBw1APp/7UM+Z9A5jVqAuZHKPlNwONjkRTfbirgB3fKwLrmvLjFKPqTXziJv3Wk8yjtOTkw9y82PgRAx6VNHhYapZyf4yqo/b9X9ic91h1zrQmiSk6DQJoOVuFVPX1J4EQZDZu7ZKLG6rTxL6CUXFNkwJPKRczgO/L20hvnGZ7uPbbfhntNW3b/EtPTEUpOALScU25TQDz/GQzsJz3KUCHwpUW+r/UM4r6ECkvT8OJWe8yuniZHTBiYg0M+RK/3xwiWVd/oi7Yl4WGKtsmd89aiFlv4vHFWNkLZXUoz850xW0uqLVqw007qULSQuvDDuBgwtts1qvEUkCy/wYgCAJfoDZn8gRZhnuwikXcaK8/mtJI2XY5CMOW/sTxZ//kGJUj7V/14S/qH5DCcZ5ew1/muaCyAvO+V/WUnlTl6gt/juCN7+Jq1OyiTm5tDNPJ3UbGWXFWlnEtAYKztjxsjMItg89KlYc3A+0dnFpvOfOUX/xnNYAF/P4OSvZ0LXvQ0uDrOLlV/bX4FwXjZnSGxfte5NsTykHTgY6nFaZd/O3o2AI8xVXU6cDTAEBsXSmdcKSpwZtWY6avrJZyE8bY4GyyVcaqW6Je04DEXsPOgVvMAoQW03OwhRMrVzPyoWii1KZPB5iqWujNY66b/0M8aP01dEPsMc1FfNOU9eIXCDT8fq+pIUGyXJEE4+0uXvBnfDyXnEJbHYqv0Djvuu+w8pFG3fAZZM40bBA0xOgDV2D5LwODc2pGLYH/H5vVvjGW2EV9EQatJZDGSXwTh2mjaPLtSs5E/AHMAcAUwxpiqcjrHEKZDPFLJRp1HcBf8WQQw1E97ZwZsQQBE/TTKEupiJZ6qCYeL/0FsTOmGyHq+igZEBDLOy/0RCAaSpnNeAAAA=" alt="Product 6" style="width:100%; height:60%; object-fit:cover;"> <p>Ice-cream(Caramel)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im"src="https://th.bing.com/th/id/OIP.mhdQtGo9khoTqRD7kc5azgHaHa?w=208&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 7" style="width:100%; height:60%; object-fit:cover;"> <p>Ice-cream(Butterscotch)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"> <img  class="im"src="https://th.bing.com/th/id/OIP.97mebh70uBZG9AJNQ08M6AHaHa?w=208&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 8" style="width:100%; height:60%; object-fit:cover;"><p>Ice-cream(Chocolate Chip)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im" src="https://th.bing.com/th/id/OIP.Smsb6ErzH7LVSAbm1W4JQAAAAA?w=225&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 9" style="width:100%; height:60%; object-fit:cover;"><p>Ice-cream(Salted Caramel)</p><button class="btn">ADD TO CART</button></div>
+    <div class="box"><img class="im" src="https://th.bing.com/th/id/OIP.KwtmlaIhqPFeTjFZ0CuQpQHaHa?w=208&h=208&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Product 10" style="width:100%; height:60%; object-fit:cover;"><p>Ice-cream(Mint Choco Chip)</p><button class="btn">ADD TO CART</button></div>
+  </div>
+</body>
+</html>

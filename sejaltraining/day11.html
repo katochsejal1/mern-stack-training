@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        h1{
+
+            color: white;
+           
+
+        }
+        .container{
+            display: flex;
+            flex-direction:column;
+        }
+        .box{
+            background-color: lightcoral;
+            height:20vh;
+            width: 30vw;
+            text-align: center;
+        }
+        @media (max-width: 600px) and (min-width: 300px) {
+            .box {
+                background-color: lightblue;
+               
+            }
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+            margin: 10px;
+        }
+        @media (min-width: 300px) {
+            .container {
+                flex-direction: row;
+               
+            }
+            .box1{
+                background-color: pink;
+
+            }
+
+
+            
+        }
+       
+
+
+        
+   
+     
+        
+      .container3{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        height: auto;
+      }
+      header{
+        background-color: pink;
+        height:20vh;
+        border: 5px lightcoral solid;
+      }
+      aside{
+        background-color: aqua;
+        height:30vh;
+        border: 5px lightseagreen solid;
+      }
+      main{
+        background-color: blueviolet;
+        height: 30vh;
+        border:5px blue solid;
+      }
+      footer{
+        background-color: chocolate;
+        height:20vh;
+        border:2px yellow solid;
+      }
+      @media(min-width:300px){
+        container2{
+            grid-template-columns: 200px 1fr; 
+            grid-template-rows: 200px 1fr;
+        }
+        header ,footer{
+            grid-column:1/3;
+        }
+         
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Box</h1>
+
+    </div>
+    <p> for flex</p>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <p> for grid </p>
+   
+    <div class="container3">
+        <header> header</header>
+        <aside> sidebar</aside>
+        <main> main</main>
+        <footer> footer</footer>
+    </div>
+
+       
+    
+</body>
+</html>

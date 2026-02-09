@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       
+        .box{
+            width: 200px;
+            height: 200px;
+            padding:10px 10px 10px 10px;
+            border: 10px solid lightcoral;
+            margin: 10px 10px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            background-image: url(IMG-20240923-WA0004.jpg);
+            background-size:cover;
+            background-position: center;
+        }
+        .photo{
+            display:flex;
+            gap:5px;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box2{
+            /* border : 5px solid purple; */
+           border-right: 5px  double red;
+           border-bottom:5px double blue;
+           border-top:5px double green;
+           border-left: 5px double orange;
+           border-radius: 15px;
+           background-color: lightyellow;
+           
+           /* border-block-start-width: 10px;
+           border-block-end-style: dotted;
+           border-block-end-width: 10px;
+           border-inline-start-color: orange;
+           border-inline-end-color: yellow; */
+         
+        
+        }
+        .box3{
+            /* margin :20px;
+            margin :20px 20px; */
+            margin :20px 20px 20px 20px; 
+            background-color: lightcoral;
+        }
+        .box4{
+            /* padding:20px 20px;
+            padding: 10px 20px 30px 40px; */
+            padding-left: 50px;
+            padding-right:30px;
+            padding-top:50px;
+            padding-bottom:20px;
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>  content padding border margin </h1>
+   
+    <div class="box2"> (border with vertical line )<br>
+        box model contains: <br> content <br>
+        padding<br> border <br> margin 
+    </div>
+    <div class="box3">content (only using margin) used for spacing outside the border </div>
+    <div class="box4"> content (only using padding ) for spacing between border and content</div>
+    <div class="photo">
+     <div class="box"></div>
+     <div class="box"></div>
+     <div class="box"></div>
+    </div>
+
+</body>
+</html>

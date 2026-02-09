@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Units</title>
+  <link rel="icon" type="image/x-icon" href="IMG-20240923-WA0004.jpg">
+  <style>
+    html {
+      font-size: 16px; 
+    }
+
+    body {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .box {
+      margin-bottom: 10px;
+      padding: 5px;
+      color: #000;
+      font-weight: bold;
+    }
+
+    
+    .px {
+      width: 200px; 
+      height: 100px;
+      background: lightcoral;
+    }
+
+    .percent {
+      width: 50%;     
+      height: 50px;
+      background: lightblue;
+    }
+
+    .em {
+      font-size: 1.5em; 
+      padding: 2em;     
+      background: lightgreen;
+    }
+
+    .rem{
+      font-size: 1.5rem; 
+      padding: 2rem;  
+      background: khaki;
+    }
+
+    .vw {
+      width: 30vw;  
+      height: 10vh;
+      background: plum;
+    }
+
+    .vmin {
+      width: 10vmin; 
+      height: 10vmin;
+      background: lightseagreen;
+    }
+
+    .vmax {
+      width: 20vmax; 
+      height: 20vmax;
+      background: orange;
+    }
+
+    
+    .cm {
+      width: 5cm;   
+      height: 2cm;  
+      background: salmon;
+    }
+
+    .mm {
+      width: 50mm;  
+      height: 20mm; 
+      background: skyblue;
+    }
+
+    .in {
+      width: 2in;  
+      height: 1in;  
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Units:</h1>
+  <div class="box px">200px wide (fixed)</div>
+  <div class="box percent">50% of parent width</div>
+  <div class="box em">Font-size and padding in em</div>
+  <div class="box rem">Font-size and padding in rem</div>
+  <div class="box vw">Width in vw, height in vh</div>
+  <div class="box vmin">Square using vmin</div>
+  <div class="box vmax">Square using vmax</div>
+  <h1>CSS Units: cm, mm, in</h1>
+  <div class="box cm">Box sized in cm</div>
+  <div class="box mm">Box sized in mm</div>
+  <div class="box in">Box sized in inches</div>
+</body>
+</html>

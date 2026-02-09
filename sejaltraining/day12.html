@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: lightcoral;
+            border:4px solid red;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            line-height: 100px;
+            position: relative;
+            animation-name: animationexample;
+            animation-duration: 4s;
+            animation-delay:2s;
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: alternate; */
+            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-fill-mode: forwards;
+
+        }
+        @keyframes animationexample {
+            from{
+                left: 0px;
+                top: 0px;
+            }
+            to{
+                left: 500px;
+                top: 500px;
+            }
+            
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="box">&hearts;</div>
+    
+</body>
+</html>

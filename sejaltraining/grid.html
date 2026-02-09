@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid</title>
+  <style>
+    .head{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto 1fr auto;
+      height:100vh;
+
+    }
+    header{
+      grid-column:1/3;
+      background-color:lightblue;
+      text-align:center;
+      height: 20vh;
+    }
+    aside{
+      background-color:lightgreen;
+      text-align:center;
+    }
+    main{
+      background-color:lightgray;
+      text-align:center;
+
+    }
+    footer{
+      grid-column:1/3;
+      background-color:lightcoral;
+      text-align:center;
+      height:20vh
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <header> THIS IS HEADER</header>
+    <aside> THIS IS ASIDE(SIDEBAR)</aside>
+    <main> THIS IS MAIN CONTENT </main>
+    <footer> THIS IS FOOTER</footer>
+  </div>
+  
+</body>
+</html>
