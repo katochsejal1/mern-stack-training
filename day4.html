@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="icon" type="image/x-icon" href="IMG-20240923-WA0004.jpg">
+
+</head>
+<body>
+    <h1> <q>INTRODUCTION TO FORM TAG</q></h1><HR>
+        <form>
+        <fieldset>
+            <legend> REGISTRATION FORM </legend>
+            <label> NAME</label>
+            <input type="text" placeholder=" enter your name" required> <br><br>
+            <LABEL > UNIVERSITY ID</LABEL>
+            <input type="number" placeholder=" enter your university id" required> <br><br>
+            <label> EMAIL ID</label>
+            <input type="email" placeholder=" enter your email id" required> <br><br>
+            <label > PASSWORD</label>
+            <input type="password" placeholder=" enter your password" minlength="6"> <br><br>
+            <label> PHONE NUMBER  </label>
+            <input type="tel" placeholder=" enter your phone number" required> <br><br>
+            <label > GENDER</label>
+            <input type="radio" name="GENDER" ID="FEMALE "> FEMALE
+            <input type="radio"name="GENDER" ID="MALE"> MALE<BR><BR>
+            <label > D.O.B</label>
+            <input type="date"> <br><br>
+            <label> DATE & TIME  OF ADMISSION </label>
+            <input type="datetime-local"> <br><br>
+            <label> CHOOSE YOUR SUBJECTS </label><BR>
+
+            <input type ="checkbox"> PYTHON <br>
+            <input type ="checkbox"> JAVA<br>
+            <input type="checkbox"> HTML<BR>
+            <input type="checkbox"> AI<BR>
+            <input type="checkbox"> ETHICAL HACKING <BR><br>
+            <label>
+                SELECT YOUR COUNTRY 
+            </label>
+            <select id="country" name="country">
+                <optgroup label=" ASIA">
+                <option value=" India">India</opt>
+                <option value="China"> china</option>
+                <option value=" JAPAN"> japan </option>
+                <optgroup label=" EUROPE">
+                <option value=" FRANCE"> france </option>       
+            </select>
+            <br><br></br>
+
+            
+            <label> AADHAR CARD</label>
+            <input type="file"><br><br>
+            <label > REVIEWS</label>
+            <textarea rows="2" cols="90"></textarea> <br><br><br>
+                 <input type="reset">
+
+             <input type="submit"><br><br>
+<hr><hr>
+             <label >  CHOOSE YOUR FAVORITE COLOR</label>
+             <INPUT type="color" value="#fff000"><BR><BR>
+
+                <label > ARE YOU SATISFIED WITH THE UNIVERSITY (LESS TO MORE SCALE)</label>
+                <input type="range" min="0" max="100" VALUE="50"><BR><BR>
+                <BR><BR>
+                <label > CHOOSE YOUR BIRTHDAY MONTH</label>
+                <input type="month">
+                <input type="week"><br><br>
+                <label > ENTER YOUR WEBSITE URL</label>
+                <input type="url" placeholder=" enter your website url">
+                 
+  <input type="image" src="IMG-20240923-WA0004.jpg" alt="Login" width="100" height="50">
+</form>
+            
+            
+            </fieldset>
+            </form>
+</body>
+</html>
