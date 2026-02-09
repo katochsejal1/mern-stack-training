@@ -1,0 +1,25 @@
+      *{
+            background-color: lightgrey;
+            font-family: cursive;
+        }
+        #text{
+            color:red;
+            background-color: pink;
+            border: 2px solid palegreen;
+            font-weight: 100;
+        }
+        .para{
+            color:black;
+            background-color: burlywood;
+            border:2px solid brown;
+            text-align: center; 
+        }
+        div,span{
+            font-size: larger;
+            border: 2px solid palevioletred;
+            height: 180px;
+            width:200px;
+            color: plum;
+        }
+            
+        
